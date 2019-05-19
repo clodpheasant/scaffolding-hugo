@@ -1,28 +1,9 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Homepage"
+languageLang = "en"
+title = "My new Victor-Hugo site"
 
-
-
-[permalinks]
-  # prova = "/culo"
-  # try = "/gnagna"
-  # porpora = "/super"
-  project1 = "/project1"
-  project2 = "/project6"
-  project3 = "/project3"
-  project4 = "/project4"
-  project5 = "/project5"
-  project6 = "/project6"
-
-# [permalinks]
-#   porpora = "/culo"
-
-  # aliases = [
-  #     "/post/my-original-url/",
-  #     "/post/single.html"
-  # ]
-
-
-# [page]
-#   page = "/culo"
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
