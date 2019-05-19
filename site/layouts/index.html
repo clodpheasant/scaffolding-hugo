@@ -1,9 +1,31 @@
-{{ define "main" }}
+{{ partial "head" . }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+{{ partial "nav" . }}
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
+{{ partial "jumbotron" (dict "imageUrl" "/img/home/jumbotron.jpg" "title" "Casa del Lavoro" "subtitle" "Persone, Imprese, Insieme") }}
 
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
+{{ partial "short-text" (dict "heading" "Chi Siamo?")}}
 
-{{ end }}
+<div class="mw7 center ph3 pt4">
+{{ partial "media-block" (dict "heading" "Persone" "text" "Ci rivolgiamo a PERSONE  per" "imageUrl" "/img/about/shade-grown.jpg") }}
+
+{{ partial "media-block-reverse" (dict "heading" "Imprese" "text" "Ci rivolgiamo a IMPRENDITORI e IMPRENDITRICI per" "imageUrl" "/img/about/single-origin.jpg") }}
+
+<!-- {{ partial "media-block" (dict "heading" "Insieme" "text" " Territorio e cittandinanza che in forma individuale o associata, professionalmente o meno desideri uno spazio di affermazione, confronto, riflessione, ascolto circa il tema del Lavoro." "imageUrl" "/img/about/sustainable-farming.jpg") }} -->
+
+</div>
+
+<!-- {{ partial "modals" . }} -->
+
+{{ partial "footer3" . }}
+
+
+{{ partial "footer" . }}
+<!--
+{{ partial "jumbotron" (dict "imageUrl" "/img/about/jumbotron.jpg" "title" "Una Casa") }}
+<div class="mw7 center ph3 pt4">
+
+  {{ partial "media-block" (dict "heading" "Shade-grown coffee" "text" "Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species." "imageUrl" "/img/about/shade-grown.jpg") }}
+
+  {{ partial "media-block-reverse" (dict "heading" "Direct sourcing" "text" "Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality." "imageUrl" "/img/about/direct-sourcing.jpg") }}
+</div> -->

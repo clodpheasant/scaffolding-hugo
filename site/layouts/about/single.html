@@ -1,0 +1,17 @@
+{{ partial "head" . }}
+
+{{ partial "nav2" . }}
+
+{{ partial "jumbotron" (dict "imageUrl" "/img/home/jumbotron.jpg" "title" "Casa del Lavoro" "subtitle" "Creiamo lavoro insieme") }}
+
+{{ partial "short-text" (dict "heading" "Cosa Siamo?" "text" "Casa del Lavoro è l’Agenzia del Lavoro della Cooperativa Patchanka, realizzata con il supporto della Diaconia Valdese e dell’Ufficio Progettazione di Coldiretti Torino e con Ue.coop Piemonte, all’interno della Casa del Quartiere +Spazio4. Opera in sinergia ed in supporto alla Regione Piemonte, all’Agenzia Piemonte Lavoro ed ai Centri per l’impiego, alla Città Metropolitana ed è connessa a numerose ulteriori realtà pubbliche e private, accreditate e non, Agenzie formative ed Educative che si occupano del tema lavoro, dell’orientamento, della formazione, dell’educazione dei giovani e degli adulti.")}}
+
+<div class="mw7 center ph3 pt4">
+{{ partial "media-block" (dict "heading" "Persone" "text" "Persone alla ricerca di lavoro, esperienze formative e al vaglio di nuovi possibili percorsi professionali o formativi." "imageUrl" "/img/about/shade-grown.jpg") }}
+
+{{ partial "media-block-reverse" (dict "heading" "Imprese" "text" "Imprese alla ricerca di personale, partnership per sviluppi socialmente orientati, attività formative per i propri lavoratori e lavoratrici." "imageUrl" "/img/about/single-origin.jpg") }}
+
+{{ partial "media-block" (dict "heading" "Insieme" "text" " Territorio e cittandinanza che in forma individuale o associata, professionalmente o meno desideri uno spazio di affermazione, confronto, riflessione, ascolto circa il tema del Lavoro." "imageUrl" "/img/about/sustainable-farming.jpg") }}
+
+</div>
+{{ partial "footer" . }}
